@@ -1,0 +1,54 @@
+
+*********** Q1 ***********
+
+
+*********** Q2 What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples. (0.5 Grade) ***********
+    1-Hoisting:It's a JavaScript behavior where variable and function declarations are processed before code executed.
+    2-TDZ: It's the time between entering a scope and initializing a variable declared with let or const.
+
+        console.log(x); undefined
+        var x=10;
+        console.log(x);
+
+
+        console.log(x); ReferenceError
+        let x=10;
+        console.log(x);
+
+
+        console.log(x); ReferenceError
+        const x=10;
+        console.log(x);
+
+
+
+*********** Q3 What are the main differences between == and ===? ***********
+    (==) It's compare between values only
+    (===) It's compare between values and data types
+
+
+
+
+
+
+*********** Q4 Explain how try-catch works and why it is important in async operations. ***********
+    try catch uses in Js to handle Errors and it consists of two parts 
+
+    try===> contains the code that need to execute and where an error might occur
+    catch====> recieves the error occured inside tyr scope
+
+    and it's important in async operations because async operations fail with unexpected errors that difficult to handle by using if conditions.
+
+
+
+*********** Q5 What’s the difference between type conversion and coercion? Provide examples of each.***********
+1- conversion means convert variable data types by using JS built in method
+ ====> like:- Number() and String()
+ ====> EX:- 
+    const value="10"
+    cosole.log(Number(value))
+
+2-coercion means Js convert data type automatically
+ ====> Ex:-
+    const value="10"
+    console.log(value+5); //105  
